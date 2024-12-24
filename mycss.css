@@ -1,0 +1,138 @@
+#myInput {
+  background-image: url('searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.myUL li {
+  width: max-content;
+}
+
+.myUL li a {
+  /*border: 1px solid #ddd;*/
+  margin-top: -1px;
+  /* Prevent double borders */
+  /*background-color: #f6f6f6; */
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+.myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+.fijo {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.blink_text {
+  animation: 1s blinker linear infinite;
+  -webkit-animation: 1s blinker linear infinite;
+  -moz-animation: 1s blinker linear infinite;
+  color: red;
+}
+
+@-moz-keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+/* Slider */
+input[type=range] {
+  -webkit-appearance: none;
+  opacity: 0;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 35px;
+  background: #8a8a8a;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  height: 35px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  border: 1px solid #000000;
+  height: 35px;
+  width: 1px;
+  border-radius: 3px;
+  background: #9e9e9e;
+  cursor: pointer;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 10px 10px 10px #383c6e, 5px 5px 10px #3a348b;
+  /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  border: 1px solid #000000;
+  height: 35px;
+  width: 1px;
+  border-radius: 3px;
+  background: #9e9e9e;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px #383c6e, 5px 5px 10px #3a348b;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  border: 1px solid #000000;
+  height: 35px;
+  width: 1px;
+  border-radius: 3px;
+  background: #9e9e9e;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px #383c6e, 5px 5px 10px #3a348b;
+}
